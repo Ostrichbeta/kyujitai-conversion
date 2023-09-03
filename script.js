@@ -10,7 +10,6 @@
 // @match             *://*/*
 // @icon              data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @require           https://code.jquery.com/jquery-3.6.1.min.js
-// @require           https://raw.githubusercontent.com/mholt/PapaParse/master/papaparse.min.js
 // @grant             GM_xmlhttpRequest
 // @connect           raw.githubusercontent.com
 // @run-at            document-end
