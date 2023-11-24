@@ -27,7 +27,7 @@
     // Recursively traverse the given node and its descendants (Depth-first search)
     function scanTextNodes(node, ref) {
         let lang = document.documentElement.lang;
-        if (!(["ja", "ja-JP"].includes(lang))) {
+        if (!(["ja", "ja-jp"].includes(lang.toLowerCase()))) {
             return;
         }
         // The node could have been detached from the DOM tree
@@ -56,6 +56,10 @@
     }
 
     function convertTitle(title, ref){
+        let lang = document.documentElement.lang;
+        if (!(["ja", "ja-jp"].includes(lang.toLowerCase()))) {
+            return;
+        }
         document.title = convertText(title, ref);
     }
 
