@@ -2,7 +2,7 @@
 // @name              Kyujitai Converter
 // @name:ja-JP        舊字體コンバーター(旧字体コンバーター)
 // @namespace         https://github.com/
-// @version           0.90.1
+// @version           0.90.2
 // @description       Change the Kanjis to the old fonts.
 // @description:ja-JP 漢字を舊字體に變更する。
 // @author            Ostrichbeta Chan
