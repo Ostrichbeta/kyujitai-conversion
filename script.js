@@ -2,7 +2,7 @@
 // @name              Kyujitai Converter
 // @name:ja-JP        舊字體コンバーター(旧字体コンバーター)
 // @namespace         https://github.com/
-// @version           0.90.2
+// @version           0.90.3
 // @description       Change the Kanjis to the old fonts.
 // @description:ja-JP 漢字を舊字體に變更する。
 // @author            Ostrichbeta Chan
@@ -77,6 +77,8 @@
                 map[obj["New"]] = obj["Old"];
                 return map;
             }, {});
+            variationSymbolRemovePattern = new RegExp("([\ufe00-\ufe0f]|\udb40[\udd00-\uddef])+", "g");
+            originalText = originalText.replace(variationSymbolRemovePattern, ((m) => ("")));
             regexPattern = new RegExp("(" + shinList.join("|") + ")", "g");
             originalText = originalText.replace(regexPattern, ((m) => (shinConv[m])));
         }
